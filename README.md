@@ -219,6 +219,7 @@ Update ```./views/layouts/base.jet``` as follows:
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
+                <!-- File Systems Dropdow won't be working until you add file systems functionality your app -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Filesystems
