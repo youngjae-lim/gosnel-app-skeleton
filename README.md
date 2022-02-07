@@ -118,3 +118,17 @@ GOOGLE_KEY=<your_google_key>
 GOOGLE_SECRET=<your_google_secret>
 GOOGLE_CALLBACK=http://localhost:4000/auth/google/callback
 ```
+
+### Maintenance Mode
+
+To go into maintenance mode,
+
+```shell
+gosnel down
+```
+
+To go back into live mode,
+
+```shell
+gosnel up
+```
