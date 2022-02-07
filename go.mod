@@ -8,7 +8,6 @@ require (
 	github.com/gorilla/sessions v1.1.1
 	github.com/markbates/goth v1.69.0
 	github.com/upper/db/v4 v4.2.1
-	github.com/youngjae-lim/gosnel v0.1.0
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
 )
 
