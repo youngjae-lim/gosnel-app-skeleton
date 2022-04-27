@@ -1,14 +1,14 @@
-BINARY_NAME=celeritasApp.exe
+BINARY_NAME=gosnelApp.exe
 
 ## build: builds all binaries
 build:
     @go build -o tmp/${BINARY_NAME} .
-	@echo Celeritas built!
+	@echo Gosnel built!
 
 run:
-	@echo Staring Celeritas...
+	@echo Staring Gosnel...
     @start /min cmd /c tmp\${BINARY_NAME} &
-	@echo Celeritas started!
+	@echo Gosnel started!
 
 clean:
 	@echo Cleaning...
@@ -22,10 +22,10 @@ test:
 	@echo Done!
 
 start: run
-	
+
 stop:
 	@echo "Starting the front end..."
 	@taskkill /IM ${BINARY_NAME} /F
-	@echo Stopped Celeritas
+	@echo Stopped Gosnel
 
 restart: stop start

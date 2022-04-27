@@ -1,14 +1,14 @@
-BINARY_NAME=celeritasApp
+BINARY_NAME=gosnelApp
 
 build:
-	@echo "Building Celeritas..."
+	@echo "Building Gosnel..."
 	@go build -o tmp/${BINARY_NAME} .
-	@echo "Celeritas built!"
+	@echo "Gosnel built!"
 
 run: build
-	@echo "Starting Celeritas..."
+	@echo "Starting Gosnel..."
 	@./tmp/${BINARY_NAME} &
-	@echo "Celeritas started!"
+	@echo "Gosnel started!"
 
 clean:
 	@echo "Cleaning..."
@@ -24,8 +24,8 @@ test:
 start: run
 
 stop:
-	@echo "Stopping Celeritas..."
+	@echo "Stopping Gosnel..."
 	@-pkill -SIGTERM -f "./tmp/${BINARY_NAME}"
-	@echo "Stopped Celeritas!"
+	@echo "Stopped Gosnel!"
 
 restart: stop start
